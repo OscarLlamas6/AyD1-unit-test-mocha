@@ -4,7 +4,7 @@
   "description": "Simple app for testing",
   "main": "app.js",
   "scripts": {
-    "test": "mocha || true",
+    "test": "mocha ./test/*.js --timeout 15000",
     "test-code-coverage": "nyc --reporter=text mocha",
     "test-html": "nyc --reporter=html --reporter=text mocha"
   },
